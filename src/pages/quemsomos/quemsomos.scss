@@ -1,0 +1,35 @@
+page-quemsomos {
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Lato');
+    ion-navbar.toolbar {
+        position: relative;
+        z-index: 2;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    }
+    .toolbar-background {
+        background-color: rgba(0, 0, 0, 0.20);
+    }
+    .slide-zoom {
+        height: 100%;
+    }
+    .bg-page {
+        padding-top: 5%;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    p {
+        font-family: 'Playfair Display SC', serif;
+        font-size: 14px;  
+    }
+    .midias_sociais {
+        display: flex;
+         a {
+            margin: 0 auto;
+        }
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,136 @@
+page-suporte {
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Playfair+Display+SC|Lato');
+    .div-logo-suporte {
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+    }
+    p {
+        font-family: 'Playfair Display SC', serif;
+        font-size: 14px;  
+    }
+    .scroll-content {
+        background-color: #222;
+    }
+    .btn-pergunta {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 250px;
+    }
+    .div-logo-ti {
+        height: auto;
+        margin-top: 30px;
+        background-color: #1a0e22;
+        padding-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+    }
+    .logo-ti {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+    .div-logo-financeiro {
+        height: auto;
+        margin-top: 30px;
+        background-color: #f3b9cb;
+        padding-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+    }
+    .logo-financeiro {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+    .div-logo-logistica {
+        height: auto;
+        margin-top: 30px;
+        background-color: #c69bc4;
+        padding-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+    }
+    .logo-logistica {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+    .div-logo-comercial {
+        height: auto;
+        margin-top: 30px;
+        background-color: #ebdcd4;
+        padding-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+    }
+    .logo-comercial {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+    .div-logo-tecnica {
+        height: auto;
+        margin-top: 30px;
+        background-color: #998379;
+        padding-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+    }
+    .logo-tecnica {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+    .div-logo-marketing {
+        height: auto;
+        margin-top: 30px;
+        background-color: #c4afa5;
+        padding-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+    }
+    .logo-marketing {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+    .div-logo-instituto {
+        height: auto;
+        margin-top: 30px;
+        background-color: #8c7973;
+        padding-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+    }
+    .logo-instituto {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+    ion-navbar.toolbar {
+        position: relative;
+        z-index: 2;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    }
+    .toolbar-background {
+        background-color: rgba(0, 0, 0, 0.20);
+    }
+    .toolbar-title {
+        color: white;
+        font-family: 'Playfair Display SC', serif;
+    }
+}

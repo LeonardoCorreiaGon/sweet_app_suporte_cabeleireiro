@@ -1,0 +1,69 @@
+<ion-navbar>
+    <!-- <ion-buttons start> -->
+            <button ion-button color="light" clear menuToggle>
+                <ion-icon name="menu"></ion-icon>
+            </button>
+    <!-- </ion-buttons> -->
+    <ion-title>Suporte Sweet</ion-title>
+    <ion-buttons end>
+            <button ion-button color="light" clear (click)="backPage()">
+                <p>voltar</p>
+            </button>
+    </ion-buttons>
+</ion-navbar>
+<ion-content padding="10">
+    <!--Logo Principal Suporte MMN-->
+    <div class="div-logo-suporte">
+        <img src="assets/img/logo_suporte.png" style="margin-left:-2.5rem;">
+        <p style="margin-top:30px;">Esse Aplicativo ajudará você a entender o nosso negócio.</p>
+        <hr>
+        <p style="color: grey;">Aqui você seleciona a àrea que deseja solicitar suporte.</p>
+    </div>
+    <!--DIV BACKGROUND-->
+    <div class="bg-cards">
+        <!--Primeira div Area TI-->
+        <div class="div-logo-ti">
+            <img class="logo-ti" src="assets/img/area_ti.png" width="60%">
+            <button ion-button class="btn-pergunta" color="light" outline (click)="sendEmailTi()">Solicitar Suporte</button>
+            <button ion-button class="btn-pergunta" color="light" outline (click)="FrTi()">Perguntas Frequentes</button>
+        </div>
+        <!--Segunda div Area Financeiro-->
+        <div class="div-logo-financeiro">
+            <img class="logo-financeiro" src="assets/img/area_financeiro.png">
+            <button ion-button class="btn-pergunta" color="dark" outline (click)="sendEmailFinanceiro()">Solicitar Suporte</button>
+            <button ion-button class="btn-pergunta" color="dark" outline (click)="FrFinanceiro()">Perguntas Frequentes</button>
+        </div>
+        <!--Terceira div Area Logistica-->
+        <div class="div-logo-logistica">
+            <img class="logo-logistica" src="assets/img/area_logistica.png">
+            <button ion-button class="btn-pergunta" color="light" outline (click)="sendEmailLogistica()">Solicitar Suporte</button>
+            <button ion-button class="btn-pergunta" color="light" outline (click)="FrLogistica()">Perguntas Frequentes</button>
+        </div>
+        <!--Quarta div Area comercial-->
+        <div class="div-logo-comercial">
+            <img class="logo-comercial" src="assets/img/area_comercial.png">
+            <button ion-button class="btn-pergunta" color="dark" outline (click)="sendEmailComercial()">Solicitar Suporte</button>
+            <button ion-button class="btn-pergunta" color="dark" outline (click)="FrComercial()">Perguntas Frequentes</button>
+        </div>
+        <!--Quinta div Area tecnica-->
+        <div class="div-logo-tecnica">
+            <img class="logo-tecnica" src="assets/img/area_tecnica.png">
+            <button ion-button class="btn-pergunta" color="light" outline (click)="sendEmailTecnica()">Solicitar Suporte</button>
+            <button ion-button class="btn-pergunta" color="light" outline (click)="FrTecnica()">Perguntas Frequentes</button>
+        </div>
+        <!--Sexta div Area marketing-->
+        <div class="div-logo-marketing">
+            <img class="logo-marketing" src="assets/img/area_marketing.png">
+            <button ion-button class="btn-pergunta" color="dark" outline (click)="sendEmailMarketing()">Solicitar Suporte</button>
+            <!--<a href="http://www.sweettransfer.com.br" style=" text-decoration: none;"><button ion-button class="btn-pergunta" color="dark"  outline>Materiais De Marketing</button></a>-->
+        </div>
+        <!--Sétima div Area instituto-->
+        <!-- <div class="div-logo-instituto">
+            <img class="logo-instituto" src="assets/img/area_instituto.png">
+            <button ion-button class="btn-pergunta" color="light" outline (click)="sendEmailInstituto()">Solicitar Suporte</button>
+            <a href="http://institutosweet.com.br" style=" text-decoration: none;"><button ion-button class="btn-pergunta" color="light" outline>Site Instituto</button></a>
+        </div> -->
+    </div>
+    <br>
+    <p style="text-align:center;color: grey;">Dentro de um prazo de 24h entraremos em contato.</p>
+</ion-content>

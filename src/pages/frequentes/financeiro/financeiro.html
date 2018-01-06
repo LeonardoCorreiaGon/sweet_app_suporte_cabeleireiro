@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar color="dark">
+        <ion-buttons left>
+            <button ion-button icon-only (click)="back()">
+                <ion-icon name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title>Financeiro Perguntas</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item style="background-color: #222;" *ngFor="let d of diseases; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+
+        <strong style="color:white;">{{d.title}}</strong>
+
+        <ion-icon style="color:white;" item-right [name]="isGroupShown(i) ? 'arrow-dropup' : 'arrow-dropdown'"></ion-icon>
+
+        <div class="pg-descricao" *ngIf="isGroupShown(i)">{{d.description}}</div>
+    </ion-item>
+</ion-content>

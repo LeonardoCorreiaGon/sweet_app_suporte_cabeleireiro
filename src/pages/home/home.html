@@ -1,0 +1,29 @@
+<ion-navbar>
+    <!-- <ion-buttons start> -->
+        <button ion-button color="black" clear menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    <!-- </ion-buttons> -->
+    <ion-buttons end>
+        <button ion-button color="black" clear (click)="openPageinfo()">
+            <ion-icon name="information-circle"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-title>Somos todos Sweet</ion-title>
+</ion-navbar>
+<ion-content scroll="false">
+    <ion-slides autoplay="2390" loop="true" pager="false" effect="fade" speed="1280"> 
+     <ion-slide>
+       <img src="assets/img/assistente_sweet.png" class="bg-page">
+     </ion-slide>
+     <ion-slide>  
+      <img src="assets/img/quem_somos.png" class="bg-page" (click)="openQuemSomos()">
+     </ion-slide>   
+     <ion-slide>  
+        <img src="assets/img/cabeleireiro_virtual.png" class="bg-page" (click)="openCabeleireiroVirtual()"> 
+     </ion-slide>
+     <ion-slide>  
+      <img src="assets/img/suporte_sweet.png" class="bg-page" (click)="openSuporteSweet()">
+     </ion-slide>
+    </ion-slides>
+</ion-content>

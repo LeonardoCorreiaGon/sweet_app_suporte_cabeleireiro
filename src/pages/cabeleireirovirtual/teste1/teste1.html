@@ -1,0 +1,362 @@
+<ion-header>
+    <div class="menu">
+     <button ion-button clear color="dark" menuToggle>
+        <ion-icon name="menu"></ion-icon>
+     </button>
+    </div>
+    <div class="progress-outer" id="progress-outer" [@progressBar]="progressBarState">
+         <div class="progress-inner" [style.width]="bar + '%'">
+             {{bar}}%
+         </div>
+    </div>
+</ion-header>
+<ion-content class="bg" [style.background-position]="map + '%'">
+    <div style="margin-right: 10%; margin-left: 10%;margin-top: 13%;" id="list-op">
+        <ion-row>
+            <div [@tag1]="tag1State" class="tag1" id="tipoDeCabeloTag" style="display: none">
+                {{tipoDeCabelo}} 
+                <!-- <span style="color:indianred; font-weight: 700">x</span> -->
+            </div>
+            <div [@tag2]="tag2State" class="tag" id="espessuraDoFioTag" style="display: none">
+                {{espessuraDoFio}} 
+                <!-- <span style="color:indianred; font-weight: 700">x</span> -->
+            </div>
+            <div [@tag3]="tag3State" class="tag3" id="comprimentoDoCabeloTag" style="display: none">
+                {{comprimentoDoCabelo}}
+                 <!-- <span style="color:indianred; font-weight: 700">x</span> -->
+            </div>
+        </ion-row>
+        <ion-row>
+            <div [@tag4]="tag4State" class="tag2" id="condicoesDoCabeloTag" style="display: none">
+                {{condicoesDoCabelo}}
+                 <!-- <span style="color:indianred; font-weight: 700">x</span> -->
+            </div>
+            <div [@tag5]="tag5State" class="tag5" id="quimicamenteTratadoTag" style="display: none">
+                {{quimicamenteTratadoVar}} 
+                <!-- <span style="color:indianred; font-weight: 700">x</span> -->
+            </div>
+        </ion-row>
+    </div>
+    <div id="tipoDeCabeloDiv">
+        <h1 [@txt]="txtState" id="txth1" style="margin-top: 7%; color: #242424" class="font-sweet">Qual é o tipo do seu cabelo?
+        </h1>
+        <ion-grid class="font-sweet" style="position: absolute;" radio-group [(ngModel)]="tipoDeCabelo" [@div1fade]="div1fadeState" [@div1bounce]="div1bounceState">
+            <ion-row>
+                <ion-col col-6 [@anim1]="anim1State">
+                    <ion-card text-wraper style="border: 1px solid grey;">
+                        <ion-radio value="liso" style="height:200px;width:300px;" (click)="tipoDeCabeloFunc()">
+                        </ion-radio>
+                        <img class="testandoimg" src="assets/img/Lisom.jpg" style="height:200px;" />
+                    </ion-card>
+                </ion-col>
+                <ion-col col-6 [@anim2]="anim2State">
+                    <ion-card text-wraper style="border: 1px solid grey;">
+                        <ion-radio value="liso" style="height:200px;width:300px;" (click)="tipoDeCabeloFunc()">
+                        </ion-radio>
+                        <img class="testandoimg" src="assets/img/cabelo_liso.jpg" style="height:200px;" />
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-6 [@anim3]="anim3State">
+                    <ion-card text-wraper style="border: 1px solid grey;">
+                        <ion-radio value="ondulado" style="height:200px;width:300px;" (click)="tipoDeCabeloFunc()">
+                        </ion-radio>
+                        <img class="testandoimg" src="assets/img/cabelo_ondulado.jpg" style="height:200px;" />
+                    </ion-card>
+                </ion-col>
+                <ion-col col-6 [@anim4]="anim4State">
+                    <ion-card text-wraper style="border: 1px solid grey;">
+                        <ion-radio value="ondulado" style="height:200px;width:300px;" (click)="tipoDeCabeloFunc()">
+                        </ion-radio>
+                        <img class="testandoimg" src="assets/img/Ondulado1.jpg" style="height:200px;" />
+                    </ion-card>
+                </ion-col>
+                <ion-col col-6>
+                    <ion-card text-wraper style="border: 1px solid grey;">
+                        <ion-radio value="crespo" style="height:217px;width: 300px;" (click)="tipoDeCabeloFunc()">
+                        </ion-radio>
+                        <img class="testandoimg" src="assets/img/Crespo.jpg" />
+                    </ion-card>
+                </ion-col>
+                <ion-col col-6>
+                    <ion-card text-wraper style="border: 1px solid grey;">
+                        <ion-radio value="crespo" style="height:210px;width: 300px;" (click)="tipoDeCabeloFunc()">
+                        </ion-radio>
+                        <img class="testandoimg" src="assets/img/Crespo1.jpg" />
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-6>
+                    <ion-card text-wraper style="border: 1px solid grey;">
+                        <ion-radio value="crespo" style="height:210px;width: 300px;" (click)="tipoDeCabeloFunc()">
+                        </ion-radio>
+                        <img class="testandoimg" src="assets/img/Crespo2.jpg" />
+                    </ion-card>
+                </ion-col>
+                <ion-col col-6>
+                    <ion-card text-wraper style="border: 1px solid grey;">
+                        <ion-radio value="crespo" style="height:207px;width: 300px;" (click)="tipoDeCabeloFunc()">
+                        </ion-radio>
+                        <img class="testandoimg" src="assets/img/Crespo3.jpg" />
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <div id="espessuraDoFioDiv" style="display: none" class="font-sweet">
+        <h1 [@txt2]="txt2State" style="margin-top: 15%; color: #242424">Selecione a espessura do seu fio de cabelo!</h1>
+        <ion-grid style="margin-top: 10%" radio-group [(ngModel)]="espessuraDoFio">
+            <ion-row [@div2]="div2State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Fino</ion-label>
+                            <ion-radio value="fino" (click)="espessuraDoFioClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row [@div22]="div22State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Médio</ion-label>
+                            <ion-radio value="médio" (click)="espessuraDoFioClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row [@div222]="div222State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Grosso</ion-label>
+                            <ion-radio value="grosso" (click)="espessuraDoFioClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <div id="comprimentoDoCabeloDiv" style="display: none" class="font-sweet">
+        <h1 [@txt3]="txt3State" style="margin-top: 15%; color: #242424">Qual é o comprimento do seu cabelo?</h1>
+        <ion-grid style="margin-top: 10%" radio-group [(ngModel)]="comprimentoDoCabelo">
+            <ion-row [@div3]="div3State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Curto</ion-label>
+                            <ion-radio value="curto" (click)="comprimentoDoCabeloClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row [@div33]="div33State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Médio</ion-label>
+                            <ion-radio value="médio" (click)="comprimentoDoCabeloClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row [@div333]="div333State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Longo</ion-label>
+                            <ion-radio value="longo" (click)="comprimentoDoCabeloClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <div id="condicoesDoCabeloDiv" style="display: none" class="font-sweet">
+        <h1 [@txt4]="txt4State" style="margin-top: 15%; color: #242424">Quais as condições do seu cabelo?</h1>
+        <ion-grid style="margin-top: 10%" radio-group [(ngModel)]="condicoesDoCabelo">
+            <ion-row [@div4]="div4State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Saudável</ion-label>
+                            <ion-radio value="saudável" (click)="condicoesDoCabeloClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row [@div44]="div44State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Danificado/Quebradiço</ion-label>
+                            <ion-radio value="danificado" (click)="condicoesDoCabeloClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row [@div444]="div444State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Seco/Poroso</ion-label>
+                            <ion-radio value="seco" (click)="condicoesDoCabeloClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row [@div4444]="div4444State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Oleoso/Queda</ion-label>
+                            <ion-radio value="oleoso" (click)="condicoesDoCabeloClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row [@div44444]="div44444State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Frizz</ion-label>
+                            <ion-radio value="frizz" (click)="condicoesDoCabeloClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row [@div444444]="div444444State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Opaco/Pontas Duplas</ion-label>
+                            <ion-radio value="opaco" (click)="condicoesDoCabeloClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row [@div4444444]="div4444444State">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Extremo Danificado/Elástico</ion-label>
+                            <ion-radio value="extremo danificado" (click)="condicoesDoCabeloClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <div id="quimicamenteTratadoDiv" style="display: none" class="font-sweet">
+        <h1 [@txt5]="txt5State" style="margin-top: 15%; color: #242424">Seu cabelo é quimicamente tratado?</h1>
+        <ion-grid style="margin-top: 10%" radio-group>
+            <!-- SIM -->
+            <ion-row [@div5Sim]="div5SimState">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Sim</ion-label>
+                            <ion-radio (click)="quimicamenteTratadoSimClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row [@div5Nao]="div5NaoState">
+                <ion-card>
+                    <ion-card-content class="card-color">
+                        <ion-item class="card-color">
+                            <ion-label>Não</ion-label>
+                            <ion-radio (click)="quimicamenteTratadoNaoClick()"></ion-radio>
+                        </ion-item>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <div id="resultadoDiv" style="display: none;">
+        <ion-row>
+            <div class="box1">
+                <p class="resultadoideal" [@resultadoEsq]="resultadoEsqState"><strong>Olha o que preparamos
+                    para você:</strong></p>
+                <ion-card class='cardresultado' [@resultado]="resultadoState">
+                    <img src="https://s3-sa-east-1.amazonaws.com/cabeleireirovirtual/results/{{chamaIMG}}" />
+                    <ion-card-content>
+                        <ion-card-title style="font-size:18px;">
+                            Produtos para você:
+                        </ion-card-title>
+                        <p>
+                            {{resultado}}
+                        </p>
+                    </ion-card-content>
+                    <hr/>
+                    <button ion-button clear block color="black" (click)="tag1()">Refazer Diagnóstico</button>
+                </ion-card>
+            </div>
+            <div class="box2" [@resultadoEsq]="resultadoEsqState">
+                <br>
+                <!-- <a href="http://www.cronograma.sweethair.com.br/{{acessanav}}"> -->
+                    <button class="btn-cronog" ion-button outline block color="black" (click)="openPageRefer()"><strong>Cronograma Capilar</strong>
+                    </button>
+                <!-- </a> -->
+                <br>
+            </div>
+        </ion-row>
+    </div>
+    <div id="cronograma_capilar_liso" style="display: none;">
+        <ion-row>
+            <img class="logo-principal" src="assets/img/logo_black.png" height="160" width="150" />
+            <!-- <img class="logo_cronograma_liso" src="assets/img/logo_liso.png" heigh="301" width="201"> -->
+            <h5 class="title-semana">Semanas de Tratamento<br><strong>Cronograma Liso</strong></h5>
+            <div class="box-card">
+                <p>1ª Semana:</p>
+                <ion-card id="card-cronograma">
+                    <img src="http://cronograma.sweethair.com.br/img/liso_01.png"/>
+                </ion-card>
+                <p>2ª Semana:</p>
+                <ion-card id="card-cronograma">
+                    <img src="http://cronograma.sweethair.com.br/img/liso_02.png"/>
+                </ion-card>
+                <p>3ª Semana:</p>
+                <ion-card id="card-cronograma">
+                    <img src="http://cronograma.sweethair.com.br/img/liso_01.png"/>
+                </ion-card>
+                <p>4ª Semana:</p>
+                <ion-card id="card-cronograma">
+                    <img src="http://cronograma.sweethair.com.br/img/liso_01.png"/>
+                </ion-card>
+            </div>
+                <button ion-button clear color="dark" block>Refazer Diagnóstico</button>
+            </ion-row>
+    </div>
+    <div id="cronograma_capilar_ondulado" style="display: none;">
+        <ion-row>
+            <img class="logo-principal" src="assets/img/logo_black.png" height="160" width="150" />
+            <!-- <img class="logo_cronograma_ondulado" src="assets/img/logo_ondulado.png"> -->
+            <h5 class="title-semana">Semanas de Tratamento<br><strong>Cronograma Ondulado</strong></h5>
+            <div class="box-card">
+                <p>1ª Semana:</p>
+                <ion-card id="card-cronograma">
+                    <img src="http://cronograma.sweethair.com.br/img/liso_01.png"/>
+                </ion-card>
+                <button ion-button clear color="dark" block>Refazer Diagnóstico</button>
+            </div>
+        </ion-row>
+    </div>
+    <div id="cronograma_capilar_crespo" style="display: none;">
+        <ion-row>
+            <img class="logo-principal" src="assets/img/logo_black.png" height="160" width="150" />
+            <!-- <img class="logo_cronograma_crespo" src="assets/img/logo_crespo.png"> -->
+            <h5 class="title-semana">Semanas de Tratamento<br><strong>Cronograma Crespo</strong></h5>
+            <div class="box-card">
+                <p>1ª Semana:</p>
+                <ion-card id="card-cronograma">
+                    <img src="http://cronograma.sweethair.com.br/img/liso_01.png"/>
+                </ion-card>
+                <button ion-button clear color="dark" block>Refazer Diagnóstico</button>
+            </div>
+        </ion-row>
+    </div>
+</ion-content>

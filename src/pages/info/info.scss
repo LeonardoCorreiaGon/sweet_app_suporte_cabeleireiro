@@ -1,0 +1,27 @@
+page-info { 
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Playfair+Display+SC|Lato');
+    ion-navbar.toolbar {
+        position: relative;
+        z-index: 2;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    }
+    .toolbar-background {
+        background-color: rgba(0, 0, 0, 0.20);
+    }
+    .bg-page {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .toolbar-title {
+        color: white;
+    }
+    p {
+		font-family: 'Playfair Display', serif;
+		font-size:14px;
+	}
+}

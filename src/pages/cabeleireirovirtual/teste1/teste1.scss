@@ -1,0 +1,224 @@
+page-teste1 {
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Playfair+Display+SC|Lato');  
+    .testandoimg {
+        margin-top: -200px;
+    }
+    .radio-md .radio-icon {
+        border-color: transparent !important;
+    }
+    .radio-inner {
+        display: none;
+    }
+    .radio-checked {
+        display: none;
+    }
+    .bg {
+        background: url('../assets/img/mapa.png') center no-repeat;
+        -webkit-transition: background-position 0.5s ease;
+        -moz-transition: background-position 0.5s ease;
+        -ms-transition: background-position 0.5s ease;
+        -o-transition: background-position 0.5s ease;
+        transition: background-position 0.5s ease;
+        text-align: center;
+    }
+    .font-sweet {
+        font-family: 'Lato', serif;
+    }
+    .cronograma-capilar-txt {
+        font-family: Lato-Regula;
+        letter-spacing: 4px;
+        margin-top: 10px;
+        margin-left: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .tag1 {
+        -webkit-transition: width 0.5s ease;
+        -moz-transition: width 0.5s ease;
+        -ms-transition: width 0.5s ease;
+        -o-transition: width 0.5s ease;
+        transition: width 0.5s ease;
+        width: 32%;
+        margin-top: 8%;
+        padding: 3px;
+        text-align: center;
+        background-color: #242424 !important;
+        color: #ffffff;
+        border-radius: 20px;
+        -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+        -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+        box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+    }
+    .tag5 {
+        -webkit-transition: width 0.5s ease;
+        -moz-transition: width 0.5s ease;
+        -ms-transition: width 0.5s ease;
+        -o-transition: width 0.5s ease;
+        transition: width 0.5s ease;
+        width: 37%;
+        margin-top: 3%;
+        margin-left: 5%;
+        padding: 3px;
+        text-align: center;
+        background-color: #242424 !important;
+        color: #ffffff;
+        border-radius: 20px;
+        -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+        -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+        box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+    }
+    .tag2 {
+        -webkit-transition: width 0.5s ease;
+        -moz-transition: width 0.5s ease;
+        -ms-transition: width 0.5s ease;
+        -o-transition: width 0.5s ease;
+        transition: width 0.5s ease;
+        width: 58%;
+        margin-top: 3%;
+        padding: 3px;
+        text-align: center;
+        background-color: #242424 !important;
+        color: #ffffff;
+        border-radius: 20px;
+        -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+        -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+        box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+    }
+    .tag3 {
+        -webkit-transition: width 0.5s ease;
+        -moz-transition: width 0.5s ease;
+        -ms-transition: width 0.5s ease;
+        -o-transition: width 0.5s ease;
+        transition: width 0.5s ease;
+        width: 30%;
+        margin-top: 8%;
+        margin-left: 5%;
+        padding: 3px;
+        text-align: center;
+        background-color: #242424 !important;
+        color: #ffffff;
+        border-radius: 20px;
+        -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+        -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+        box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+    }
+    .tag {
+        -webkit-transition: width 0.5s ease;
+        -moz-transition: width 0.5s ease;
+        -ms-transition: width 0.5s ease;
+        -o-transition: width 0.5s ease;
+        transition: width 0.5s ease;
+        width: 28%;
+        margin-top: 8%;
+        margin-left: 5%;
+        padding: 3px;
+        text-align: center;
+        background-color: #242424 !important;
+        color: #ffffff;
+        border-radius: 20px;
+        -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+        -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+        box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.6);
+    }
+    .resultadoideal {
+        text-align: center;
+        font-family: Lato-Regular;
+        margin-left: 5px;
+    }
+    @font-face {
+        font-family: Lato-Bold;
+        src: url("../assets/fonts/Lato-Bold.ttf");
+    }
+    .box1 {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        width: 100% !important;
+        margin-top: 20px;
+        height: auto;
+    }
+    .box2 {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        width: 100% !important;
+        margin-top: 5px;
+        height: auto !important;
+    }
+    .card-color {
+        background-color: #242424;
+        color: #fff;
+    }
+    h1 {
+        font-size: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .progress-outer {
+        -webkit-transition: width 1.0s ease;
+        -moz-transition: width 1.0s ease;
+        -ms-transition: width 1.0s ease;
+        -o-transition: width 1.0s ease;
+        transition: width 1.0s ease;
+        width: 80%;
+        margin-top: 6%;
+        margin-left: 15%;
+        position: absolute;
+        float:right;
+        text-align: center;
+        background-color: #fff !important;
+        color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    }
+    .menu {
+        position: absolute;
+        float: left;
+        padding: 3px;
+        padding-top: 4%;
+    }
+    .progress-inner {
+        background: #ececec;
+        background: -webkit-linear-gradient(to right, #000000, #ffffff);
+        background: -o-linear-gradient(to right, #000000, #ffffff);
+        background: -moz-linear-gradient(to right, #000000, #ffffff);
+        background: -ms-linear-gradient(to right, #000000, #ffffff);
+        background: linear-gradient(to right, #000000, #ffffff);
+        -webkit-transition: 600ms cubic-bezier(0.5, 0, 0.38, 1);
+        -moz-transition: 600ms cubic-bezier(0.5, 0, 0.38, 1);
+        -o-transition: 600ms cubic-bezier(0.5, 0, 0.38, 1);
+        -ms-transition: 600ms cubic-bezier(0.5, 0, 0.38, 1);
+        transition: 600ms cubic-bezier(0.5, 0, 0.38, 1);
+        -webkit-transition: width 0.5s ease;
+        -moz-transition: width 0.5s ease;
+        -ms-transition: width 0.5s ease;
+        -o-transition: width 0.5s ease;
+        transition: width 0.5s ease;
+        min-width: 13%;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 5px;
+        border-radius: 20px;
+        border: 1px solid #eaeaea !important;
+        background-color: #ffffff !important;
+    }
+    .btn-cronog {
+        margin: 0 auto;
+        width: 70%;
+        height: 35px;    
+    }
+    a {
+        text-decoration: none;
+    }
+    .logo-principal {
+        padding-top: 4%;
+        display: block;
+        margin: 0 auto;
+    }
+    #card-cronograma {
+        position: relative;
+      }
+    .title-semana {
+        margin: 0 auto;
+        display: block;
+        font-family: 'Playfair Display SC', serif;
+    }
+
+   
+}
